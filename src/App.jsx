@@ -2,6 +2,7 @@ import Taskform from "./Components/Taskform"
 import Tasklist from "./Components/Tasklist"
 import Progresstracker from "./Components/Progresstracker"
 import { useEffect, useState } from "react"
+import "./Style.css";
 
 
 export default function App() {
@@ -33,7 +34,7 @@ export default function App() {
       <Tasklist tasks = {tasks}
       updateTask = {updateTask}
       deleteTask = {deleteTask}/>
-      <Progresstracker />
+      <Progresstracker tasks = {tasks}/>
       <button>Clear All Task</button>
     </div>
   )
